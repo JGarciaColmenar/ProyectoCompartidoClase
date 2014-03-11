@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2014-03-11T18:32:43Z</created><keywords></keywords><modified>2014-03-11T18:32:43Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <library_materials>
+    <material id="lambert1" name="lambert1">
+      <instance_effect url="#lambert1-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="lambert1-fx" name="lambert1">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.400000  0.400000 0.400000 1.000000</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="pCube1-lib" name="pCube1Mesh">
+      <mesh>
+        <source id="pCube1-POSITION">
+          <float_array id="pCube1-POSITION-array" count="24">
+-7.821488 -0.830520 4.036100
+7.821488 -0.830520 4.036100
+-7.821488 0.830520 4.036100
+7.821488 0.830520 4.036100
+-7.821488 0.830520 -4.036100
+7.821488 0.830520 -4.036100
+-7.821488 -0.830520 -4.036100
+7.821488 -0.830520 -4.036100
+</float_array>
+          <technique_common>
+            <accessor source="#pCube1-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pCube1-Normal0">
+          <float_array id="pCube1-Normal0-array" count="108">
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#pCube1-Normal0-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pCube1-UV0">
+          <float_array id="pCube1-UV0-array" count="28">
+0.375000 0.000000
+0.625000 0.000000
+0.375000 0.250000
+0.625000 0.250000
+0.375000 0.500000
+0.625000 0.500000
+0.375000 0.750000
+0.625000 0.750000
+0.375000 1.000000
+0.625000 1.000000
+0.875000 0.000000
+0.875000 0.250000
+0.125000 0.000000
+0.125000 0.250000
+</float_array>
+          <technique_common>
+            <accessor source="#pCube1-UV0-array" count="14" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="pCube1-VERTEX">
+          <input semantic="POSITION" source="#pCube1-POSITION"/>
+        </vertices>
+        <triangles count="12" material="lambert1"><input semantic="VERTEX" offset="0" source="#pCube1-VERTEX"/><input semantic="NORMAL" offset="1" source="#pCube1-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#pCube1-UV0"/><p> 3 0 3 2 1 2 0 2 0 3 3 3 0 4 0 1 5 1 2 6 2 3 7 3 5 8 5 2 9 2 5 10 5 4 11 4 7 12 7 6 13 6 4 14 4 7 15 7 4 16 4 5 17 5 1 18 9 0 19 8 6 20 6 1 21 9 6 22 6 7 23 7 5 24 11 3 25 3 1 26 1 1 27 1 7 28 10 5 29 11 2 30 2 6 31 12 0 32 0 6 33 12 2 34 2 4 35 13</p></triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_animations>
+    <animation id="pCube1-anim" name="pCube1"><animation><source id="pCube1-Matrix-animation-input"><float_array id="pCube1-Matrix-animation-input-array" count="24">
+
+0.041667 0.083333 0.125000 0.166667 0.208333 0.250000 0.291667 0.333333 0.375000 0.416667 0.458333 0.500000 0.541667 0.583333 0.625000 0.666667
+0.708333 0.750000 0.791667 0.833333 0.875000 0.916667 0.958333 1.000000</float_array><technique_common><accessor source="#pCube1-Matrix-animation-input-array" count="24"><param name="TIME" type="float"/></accessor></technique_common></source><source id="pCube1-Matrix-animation-output-transform"><float_array id="pCube1-Matrix-animation-output-transform-array" count="384">
+
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 0.830520 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 0.899892 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 1.094135 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 1.392436 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 1.773984 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 2.217966 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 2.703573 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 3.209991 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 3.716408 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 4.202015 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 4.645998 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 5.027545 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 5.325846 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 5.520089 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 5.589461 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 5.408747 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 4.924434 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 4.223264 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 3.391980 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 2.517325 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 1.686042 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 0.984872 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 0.500559 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 0.319845 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000</float_array><technique_common><accessor source="#pCube1-Matrix-animation-output-transform-array" count="24" stride="16"><param type="float4x4"/></accessor></technique_common></source><source id="pCube1-Interpolations"><Name_array id="pCube1-Interpolations-array" count="24">
+ LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR
+LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR
+LINEAR</Name_array><technique_common><accessor source="#pCube1-Interpolations-array" count="24"><param type="name"/></accessor></technique_common></source><sampler id="pCube1-Matrix-animation-transform"><input semantic="INPUT" source="#pCube1-Matrix-animation-input"/><input semantic="OUTPUT" source="#pCube1-Matrix-animation-output-transform"/><input semantic="INTERPOLATION" source="#pCube1-Interpolations"/></sampler><channel source="#pCube1-Matrix-animation-transform" target="pCube1/matrix"/></animation><animation><source id="pCube1-visibility-animation-input"><float_array id="pCube1-visibility-animation-input-array" count="3">
+
+0.041667 0.625000 1.000000</float_array><technique_common><accessor source="#pCube1-visibility-animation-input-array" count="3"><param name="TIME" type="float"/></accessor></technique_common></source><source id="pCube1-visibility-animation-output"><float_array id="pCube1-visibility-animation-output-array" count="3">
+
+1.000000 1.000000 1.000000</float_array><technique_common><accessor source="#pCube1-visibility-animation-output-array" count="3"><param type="float"/></accessor></technique_common></source><source id="pCube1-visibility-animation-intan"><float_array id="pCube1-visibility-animation-intan-array" count="3">
+
+0.000000 0.000000 0.000000</float_array><technique_common><accessor source="#pCube1-visibility-animation-intan-array" count="3"><param type="float"/></accessor></technique_common></source><source id="pCube1-visibility-animation-outtan"><float_array id="pCube1-visibility-animation-outtan-array" count="3">
+
+0.000000 0.000000 0.000000</float_array><technique_common><accessor source="#pCube1-visibility-animation-outtan-array" count="3"><param type="float"/></accessor></technique_common></source><source id="pCube1-visibility-animation-interpolation"><Name_array id="pCube1-visibility-animation-interpolation-array" count="3">
+ STEP STEP STEP</Name_array><technique_common><accessor source="#pCube1-visibility-animation-interpolation-array" count="3"><param type="name"/></accessor></technique_common></source><sampler id="pCube1-visibility-animation"><input semantic="INPUT" source="#pCube1-visibility-animation-input"/><input semantic="OUTPUT" source="#pCube1-visibility-animation-output"/><input semantic="IN_TANGENT" source="#pCube1-visibility-animation-intan"/><input semantic="OUT_TANGENT" source="#pCube1-visibility-animation-outtan"/><input semantic="INTERPOLATION" source="#pCube1-visibility-animation-interpolation"/></sampler><channel source="#pCube1-visibility-animation" target="pCube1/visibility"/></animation></animation>
+  </library_animations>
+  <library_visual_scenes>
+    <visual_scene id="ghhj" name="ghhj">
+      <node name="pCube1" id="pCube1" sid="pCube1"><matrix sid="matrix">1.000000 0.000000 0.000000 -1.041568 0.000000 1.000000 0.000000 0.830520 0.000000 0.000000 1.000000 1.704286 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#pCube1-lib"><bind_material><technique_common><instance_material symbol="lambert1" target="#lambert1"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>24.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.041667</start_time><end_time>2.000000</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#ghhj"></instance_visual_scene>
+  </scene>
+</COLLADA>
